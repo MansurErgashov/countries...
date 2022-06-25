@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dars-9</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header__container container">
+            <p class="site-header__logo">
+                <a class="site-header__logo-link" href="#">Where in the world?</a>
+            </p>
+            <a class="site-header__link" href="#">
+                <img class="site-header__link-img" src="img/Dark mode.svg" alt="Dark mode" width="108" height="22">
+            </a>
+        </div>
+    </header>
+
+
+    <!--Main-->
+    <main class="main">
+        <div class="main__container container">
+            <form class="main__form" action="#">
+                <label for="search" class="main__label">
+                    <input class="main__form-label-search" id="search" type="search" placeholder="Search for a country…">
+                </label>
+                <select name="country" id="country" class="main__form-select">
+                    <option class="main__form-select-option" value="Filter by Region">Filter by Region</option>
+                </select>
+            </form>
+            <ul class="main__list">
+                 <!-- <li class="main__list-item">
+                    <a class="main__item-link" href="#">
+                        <img class="main__item-link-img" src="img/Germany.svg" alt="Germany" width="267" height="160">
+                        <h3 class="main__item-link-heading">Germany</h3>
+                        <p class="main__item-link-desc">Population: 81,770,900</p>
+                        <p class="main__item-link-desc">Region: Europe</p>
+                        <p class="main__item-link-desc">Capital: Berlin</p>
+                    </a>
+                </li>  -->
+            </ul>
+        </div>
+    </main>
+    <template class="template">
+        <li class="main__list-item">
+            <a class="main__item-link" href="#">
+                <img class="main__item-link-img" src="img/Germany.svg" alt="Germany" width="267" height="160">
+                <h3 class="main__item-link-heading">Germany</h3>
+                <p class="main__item-link-desc" id="desc1">Population: 81,770,900</p>
+                <p class="main__item-link-desc" id="desc2">Region: Europe</p>
+                <p class="main__item-link-desc" id="desc3">Capital: Berlin</p>
+            </a>
+        </li>
+    </template>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

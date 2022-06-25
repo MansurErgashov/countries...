@@ -1,0 +1,50 @@
+.site-header {
+    background-color: #2B3844;
+    padding: 23px 0 24px 0;
+}
+.site-header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-header__logo {
+    margin: 0;
+    padding: 0;
+}
+.site-header__logo-link {
+    display: block;
+    font-family: 'Nunito Sans';
+
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.site-header__link {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.site-header__link-img {
+    display: block;
+}
+
+@include breakpoint-down(550px) {
+    .site-header__logo-link {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .site-header__link-img {
+        width: 96px;
+    }
+}
+@include breakpoint-down(375px) {
+    .site-header__logo-link {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .site-header__link-img {
+        width: 84px;
+    }
+}
